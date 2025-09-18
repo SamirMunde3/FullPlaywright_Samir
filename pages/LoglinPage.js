@@ -1,6 +1,6 @@
 exports.LoginPage = 
 class LoginPage {
-   
+    //pom git hub
     constructor(page) {
       this.page = page;
       this.loginLink="#login2"
