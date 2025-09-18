@@ -1,0 +1,38 @@
+{
+  "environments": {
+    "qa": {
+      "url": "https://www.demoblaze.com/index.html",
+      "users": [
+        {
+          "username": "samir321",
+          "password": "test@321"
+        },
+        {
+          "username": "pavanol",
+          "password": "test@123"
+        },
+        {
+          "username": "samir369",
+          "password": "test@321"
+        }
+      ]
+    },
+    "staging": {
+      "url": "https://www.demoblaze.com/index.html",
+      "users": [
+        {
+          "username": "samir321",
+          "password": "test@321"
+        },
+        {
+          "username": "pavanol",
+          "password": "test@123"
+        },
+        {
+          "username": "samir369",
+          "password": "test@321"
+        }
+      ]
+    }
+  }
+}

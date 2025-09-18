@@ -6,7 +6,8 @@ import testData from '../test-data/qa/file.json' assert { type: 'json' }; // ✅
 for (const user of testData.users) {
   test(`Data Driven Testing USING JSON: ${user.username}`, async ({ page }) => {
     // Go to URL (from JSON or .env if you want)
-    await page.goto(testData.url);
+    //await page.goto(testData.url);
+    await page.goto(process.env.url);
 
     // Perform login
     await page.locator('#login2').click();
