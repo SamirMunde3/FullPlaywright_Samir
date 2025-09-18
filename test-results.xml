@@ -1,0 +1,592 @@
+<testsuites id="" name="" tests="82" failures="7" skipped="1" errors="0" time="120.357503">
+<testsuite name="alerts.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="3" failures="2" skipped="1" time="60.365" errors="0">
+<testcase name="Alert with OK" classname="alerts.spec.js" time="30.18">
+<failure message="alerts.spec.js:3:1 Alert with OK" type="FAILURE">
+<![CDATA[  [chromium] › alerts.spec.js:3:1 › Alert with OK ──────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('//button[normalize-space()="Alert"]')
+
+
+      11 |
+      12 |   })
+    > 13 |   await page.click('//button[normalize-space()="Alert"]');
+         |              ^
+      14 |   await page.waitForTimeout(5000);
+      15 |  
+      16 | });
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\alerts.spec.js:13:14
+
+    Error Context: ..\test-results\alerts-Alert-with-OK-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alerts-Alert-with-OK-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Confirmation Dialod-Alert with OK and cancel" classname="alerts.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prompt Dialog" classname="alerts.spec.js" time="30.185">
+<failure message="alerts.spec.js:36:1 Prompt Dialog" type="FAILURE">
+<![CDATA[  [chromium] › alerts.spec.js:36:1 › Prompt Dialog ─────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('//button[normalize-space()="Prompt"]')
+
+
+      46 |
+      47 |   })
+    > 48 |   await page.click('//button[normalize-space()="Prompt"]');
+         |              ^
+      49 |   await expect(page.locator('//p[@id="demo"]')).toHaveText('Hello John! How are you today?')
+      50 |
+      51 |   await page.waitForTimeout(5000);
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\alerts.spec.js:48:14
+
+    Error Context: ..\test-results\alerts-Prompt-Dialog-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\alerts-Prompt-Dialog-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="datadriventestingcsv.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="3" failures="0" skipped="0" time="18.743" errors="0">
+<testcase name="Data Driven Testing Using CSV in playwright samir321" classname="datadriventestingcsv.spec.js" time="6.684">
+</testcase>
+<testcase name="Data Driven Testing Using CSV in playwright pavanol" classname="datadriventestingcsv.spec.js" time="6.683">
+</testcase>
+<testcase name="Data Driven Testing Using CSV in playwright samir369" classname="datadriventestingcsv.spec.js" time="5.376">
+</testcase>
+</testsuite>
+<testsuite name="datadriventestingjson.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="3" failures="0" skipped="0" time="24.15" errors="0">
+<testcase name="Data Driven Testing USING JSON: samir321" classname="datadriventestingjson.spec.js" time="8.309">
+</testcase>
+<testcase name="Data Driven Testing USING JSON: pavanol" classname="datadriventestingjson.spec.js" time="7.942">
+</testcase>
+<testcase name="Data Driven Testing USING JSON: samir369" classname="datadriventestingjson.spec.js" time="7.899">
+</testcase>
+</testsuite>
+<testsuite name="datepicker.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.988" errors="0">
+<testcase name="Date Picker" classname="datepicker.spec.js" time="8.988">
+</testcase>
+</testsuite>
+<testsuite name="datepicker2.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.318" errors="0">
+<testcase name="Date Picker in playwright" classname="datepicker2.spec.js" time="7.318">
+</testcase>
+</testsuite>
+<testsuite name="demo-todo-app.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="24" failures="0" skipped="0" time="27.224" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="demo-todo-app.spec.js" time="0.662">
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="demo-todo-app.spec.js" time="0.862">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="demo-todo-app.spec.js" time="0.843">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="demo-todo-app.spec.js" time="0.893">
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="demo-todo-app.spec.js" time="1.737">
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="demo-todo-app.spec.js" time="1.694">
+</testcase>
+<testcase name="Item › should allow me to mark items as complete" classname="demo-todo-app.spec.js" time="0.826">
+</testcase>
+<testcase name="Item › should allow me to un-mark items as complete" classname="demo-todo-app.spec.js" time="0.833">
+</testcase>
+<testcase name="Item › should allow me to edit an item" classname="demo-todo-app.spec.js" time="0.934">
+</testcase>
+<testcase name="Editing › should hide other controls when editing" classname="demo-todo-app.spec.js" time="1.222">
+</testcase>
+<testcase name="Editing › should save edits on blur" classname="demo-todo-app.spec.js" time="1.537">
+</testcase>
+<testcase name="Editing › should trim entered text" classname="demo-todo-app.spec.js" time="1.327">
+</testcase>
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="demo-todo-app.spec.js" time="1.156">
+</testcase>
+<testcase name="Editing › should cancel edits on escape" classname="demo-todo-app.spec.js" time="1.139">
+</testcase>
+<testcase name="Counter › should display the current number of todo items" classname="demo-todo-app.spec.js" time="0.9">
+</testcase>
+<testcase name="Clear completed button › should display the correct text" classname="demo-todo-app.spec.js" time="1.045">
+</testcase>
+<testcase name="Clear completed button › should remove completed items when clicked" classname="demo-todo-app.spec.js" time="1.032">
+</testcase>
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="demo-todo-app.spec.js" time="1.151">
+</testcase>
+<testcase name="Persistence › should persist its data" classname="demo-todo-app.spec.js" time="1.098">
+</testcase>
+<testcase name="Routing › should allow me to display active items" classname="demo-todo-app.spec.js" time="1.224">
+</testcase>
+<testcase name="Routing › should respect the back button" classname="demo-todo-app.spec.js" time="1.266">
+</testcase>
+<testcase name="Routing › should allow me to display completed items" classname="demo-todo-app.spec.js" time="1.34">
+</testcase>
+<testcase name="Routing › should allow me to display all items" classname="demo-todo-app.spec.js" time="1.301">
+</testcase>
+<testcase name="Routing › should highlight the currently applied filter" classname="demo-todo-app.spec.js" time="1.202">
+</testcase>
+</testsuite>
+<testsuite name="dropdownlist.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.358" errors="0">
+<testcase name="Handle dropdown list in playwright" classname="dropdownlist.spec.js" time="7.358">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.721" errors="0">
+<testcase name="has title" classname="example.spec.js" time="0.754">
+</testcase>
+<testcase name="get started link" classname="example.spec.js" time="1.967">
+</testcase>
+</testsuite>
+<testsuite name="firsttest.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.52" errors="0">
+<testcase name="Validate Youtube title" classname="firsttest.spec.js" time="9.52">
+</testcase>
+</testsuite>
+<testsuite name="grouping.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="6" failures="0" skipped="0" time="1.686" errors="0">
+<testcase name="Smoke › Test1" classname="grouping.spec.js" time="0.245">
+<system-out>
+<![CDATA[this is beforeAll Hook......
+this is beforeEach Hook......
+this is test 1....
+this is afterEach Hook......
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke › Test2" classname="grouping.spec.js" time="0.265">
+<system-out>
+<![CDATA[this is beforeEach Hook......
+this is test 2....
+this is afterEach Hook......
+this is aftereAll Hook......
+]]>
+</system-out>
+</testcase>
+<testcase name="Sanity › Test3" classname="grouping.spec.js" time="0.426">
+<system-out>
+<![CDATA[this is beforeAll Hook......
+this is beforeEach Hook......
+this is test 3....
+this is afterEach Hook......
+]]>
+</system-out>
+</testcase>
+<testcase name="Sanity › Test4" classname="grouping.spec.js" time="0.277">
+<system-out>
+<![CDATA[this is beforeEach Hook......
+this is test 4....
+this is afterEach Hook......
+this is aftereAll Hook......
+]]>
+</system-out>
+</testcase>
+<testcase name="Regression › Test5" classname="grouping.spec.js" time="0.251">
+<system-out>
+<![CDATA[this is beforeAll Hook......
+this is beforeEach Hook......
+this is test 5....
+this is afterEach Hook......
+]]>
+</system-out>
+</testcase>
+<testcase name="Regression › Test6" classname="grouping.spec.js" time="0.222">
+<system-out>
+<![CDATA[this is beforeEach Hook......
+this is test 6....
+this is afterEach Hook......
+this is aftereAll Hook......
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="hiddendropdown.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.141" errors="0">
+<testcase name="Hidden options dropdown" classname="hiddendropdown.spec.js" time="19.141">
+</testcase>
+</testsuite>
+<testsuite name="hooks.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="0" skipped="0" time="21.191" errors="0">
+<testcase name="Hooks in playwright" classname="hooks.spec.js" time="12.12">
+<system-out>
+<![CDATA[Running before all test...!
+Running before each test...!
+Running after each test...!
+Running after all test...!
+]]>
+</system-out>
+</testcase>
+<testcase name="Hooks in playwright2" classname="hooks.spec.js" time="9.071">
+<system-out>
+<![CDATA[Running before all test...!
+Running before each test...!
+Running after each test...!
+Running after all test...!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="hooks1.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="0" skipped="0" time="9.372" errors="0">
+<testcase name="Home Page Test" classname="hooks1.spec.js" time="4.113">
+</testcase>
+<testcase name="Add Product to cart Test" classname="hooks1.spec.js" time="5.259">
+</testcase>
+</testsuite>
+<testsuite name="hooks2.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="0" skipped="0" time="8.949" errors="0">
+<testcase name="Home Page Test" classname="hooks2.spec.js" time="3.717">
+</testcase>
+<testcase name="Add Product to cart Test" classname="hooks2.spec.js" time="5.232">
+</testcase>
+</testsuite>
+<testsuite name="hooks3.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.471" errors="0">
+<testcase name="Home Page Test" classname="hooks3.spec.js" time="0.033">
+</testcase>
+<testcase name="Add Product to cart Test" classname="hooks3.spec.js" time="2.438">
+</testcase>
+</testsuite>
+<testsuite name="iframedraganddrop.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.764" errors="0">
+<testcase name="Handle iframes in playwright &amp; Drag nd Drop" classname="iframedraganddrop.spec.js" time="7.764">
+</testcase>
+</testsuite>
+<testsuite name="keyboardactions.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.684" errors="0">
+<testcase name="Keyboard actions" classname="keyboardactions.spec.js" time="9.684">
+</testcase>
+</testsuite>
+<testsuite name="locators.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.942" errors="0">
+<testcase name="Locators Test" classname="locators.spec.js" time="6.942">
+</testcase>
+</testsuite>
+<testsuite name="mouseactions.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="3" failures="0" skipped="0" time="27.441" errors="0">
+<testcase name="Mouse hover" classname="mouseactions.spec.js" time="11.926">
+</testcase>
+<testcase name="Mouse Double Click" classname="mouseactions.spec.js" time="9.287">
+</testcase>
+<testcase name="Mouse Right Click" classname="mouseactions.spec.js" time="6.228">
+</testcase>
+</testsuite>
+<testsuite name="multipleOptionsdropdown.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="1" skipped="0" time="4.002" errors="0">
+<testcase name="Handle dropdowns" classname="multipleOptionsdropdown.spec.js" time="4.002">
+<failure message="multipleOptionsdropdown.spec.js:3:1 Handle dropdowns" type="FAILURE">
+<![CDATA[  [chromium] › multipleOptionsdropdown.spec.js:3:1 › Handle dropdowns ──────────────────────────────
+
+    ReferenceError: Cannot access 'options' before initialization
+
+      11 |     //1) check number of options in dropdown
+      12 |     const options1=await page.locator('#colors option')
+    > 13 |     await expect(options).toHaveCount(5);
+         |                  ^
+      14 |
+      15 |     //2) check number of options in dropdown using JS array
+      16 |     const options=await page.$$('#colors option')
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\multipleOptionsdropdown.spec.js:13:18
+
+    Error Context: ..\test-results\multipleOptionsdropdown-Handle-dropdowns-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\multipleOptionsdropdown-Handle-dropdowns-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="paralleltesting.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="3" failures="0" skipped="0" time="0.523" errors="0">
+<testcase name="Group1 › Test1" classname="paralleltesting.spec.js" time="0.139">
+<system-out>
+<![CDATA[this is test 1....
+]]>
+</system-out>
+</testcase>
+<testcase name="Group1 › Test2" classname="paralleltesting.spec.js" time="0.175">
+<system-out>
+<![CDATA[this is test 2....
+]]>
+</system-out>
+</testcase>
+<testcase name="Group1 › Test3" classname="paralleltesting.spec.js" time="0.209">
+<system-out>
+<![CDATA[this is test 3....
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="parameterizetest.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="3" failures="0" skipped="0" time="27.657" errors="0">
+<testcase name="Parameterize tests in playwright playwright by testers talk" classname="parameterizetest.spec.js" time="9.97">
+</testcase>
+<testcase name="Parameterize tests in playwright cypress by testers talk" classname="parameterizetest.spec.js" time="8.766">
+</testcase>
+<testcase name="Parameterize tests in playwright javascript by testers talk" classname="parameterizetest.spec.js" time="8.921">
+</testcase>
+</testsuite>
+<testsuite name="pomtest.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.961" errors="0">
+<testcase name="test" classname="pomtest.spec.js" time="0.961">
+<failure message="pomtest.spec.js:7:5 test" type="FAILURE">
+<![CDATA[  [chromium] › pomtest.spec.js:7:5 › test ──────────────────────────────────────────────────────────
+
+    ReferenceError: LoginPage is not defined
+
+       8 |
+       9 |   //Login
+    > 10 |   const login=new LoginPage(page);
+         |               ^
+      11 |   await login.gotoLoginPage();
+      12 |   await login.login('pavanol','test@123')
+      13 |   await page.waitForTimeout(3000)
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\pomtest.spec.js:10:15
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="radiobuttons.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="1" skipped="0" time="1.774" errors="0">
+<testcase name="handle radio button" classname="radiobuttons.spec.js" time="1.774">
+<failure message="radiobuttons.spec.js:3:1 handle radio button" type="FAILURE">
+<![CDATA[  [chromium] › radiobuttons.spec.js:3:1 › handle radio button ──────────────────────────────────────
+
+    Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://itera-qa.azurewebsites.net/home/automation
+    Call log:
+      - navigating to "https://itera-qa.azurewebsites.net/home/automation", waiting until "load"
+
+
+      3 | test('handle radio button',async ({page})=>{
+      4 |
+    > 5 |     await page.goto('https://itera-qa.azurewebsites.net/home/automation');
+        |                ^
+      6 |
+      7 |     //Radio button
+      8 |     await page.locator("//input[@value='option2']").check(); //male
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\radiobuttons.spec.js:5:16
+
+    Error Context: ..\test-results\radiobuttons-handle-radio-button-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\radiobuttons-handle-radio-button-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="readenvfile.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.361" errors="0">
+<testcase name="Read Env File in playwright" classname="readenvfile.spec.js" time="7.361">
+<system-out>
+<![CDATA[Username is : pavanol
+Password is : test@123
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="recoredtest.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.787" errors="0">
+<testcase name="test" classname="recoredtest.spec.js" time="3.787">
+</testcase>
+</testsuite>
+<testsuite name="screenshots.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.069" errors="0">
+<testcase name="Take screenshot in playwright" classname="screenshots.spec.js" time="30.069">
+<failure message="screenshots.spec.js:5:1 Take screenshot in playwright" type="FAILURE">
+<![CDATA[  [chromium] › screenshots.spec.js:5:1 › Take screenshot in playwright › Take a element screenshot ─
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.screenshot: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('//input[@placeholder=\'Username \']')
+
+
+      10 |        //element screenshot
+      11 |     await test.step('Take a element screenshot', async () => {
+    > 12 |         await page.locator("//input[@placeholder='Username ']").screenshot({ path: './screenshots/element.png' })
+         |                                                                 ^
+      13 |     });
+      14 |       //page screenshot
+      15 |     await test.step('Capture a page screenshot', async () => {
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\screenshots.spec.js:12:65
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\screenshots.spec.js:11:16
+
+    Error Context: ..\test-results\screenshots-Take-screenshot-in-playwright-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\screenshots-Take-screenshot-in-playwright-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="softassertions.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="0" skipped="0" time="3.607" errors="0">
+<testcase name="Soft assertions" classname="softassertions.spec.js" time="1.48">
+</testcase>
+<testcase name="Soft Assertions in playwright" classname="softassertions.spec.js" time="2.127">
+</testcase>
+</testsuite>
+<testsuite name="table1.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.57" errors="0">
+<testcase name="handling table" classname="table1.spec.js" time="19.57">
+<system-out>
+<![CDATA[Number of columns: [33m4[39m
+Number of rows: [33m5[39m
+Number of pages in the table: [33m4[39m
+1
+Smartphone
+$10.99
+2
+Laptop
+$19.99
+3
+Tablet 
+$5.99
+4
+Smartwatch
+$7.99
+5
+Wireless Earbuds
+$8.99
+6
+Bluetooth Speaker
+$9.99
+7
+Television
+$20.99
+8
+Action Camera
+$15.99
+9
+Gaming Console
+$5.99
+10
+Digital Camera
+$16.99
+11
+Smart Home Hub
+$20.99
+12
+Router
+$24.99
+13
+Portable Charger
+$30.99
+14
+Fitness Tracker
+$19.99
+15
+Desktop Computer
+$2.99
+16
+E-Reader
+$10.99
+17
+VR Headset
+$11.99
+18
+Streaming Device
+$13.99
+19
+Soundbar
+$16.99
+20
+Wireless Mouse 20
+$17.99
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="tags.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="5" failures="0" skipped="0" time="1.153" errors="0">
+<testcase name="test1@sanity" classname="tags.spec.js" time="0.167">
+<system-out>
+<![CDATA[this is my test1...
+]]>
+</system-out>
+</testcase>
+<testcase name="test2@sanity" classname="tags.spec.js" time="0.26">
+<system-out>
+<![CDATA[this is my test2...
+]]>
+</system-out>
+</testcase>
+<testcase name="test3@reg" classname="tags.spec.js" time="0.22">
+<system-out>
+<![CDATA[this is my test3...
+]]>
+</system-out>
+</testcase>
+<testcase name="test4@reg" classname="tags.spec.js" time="0.223">
+<system-out>
+<![CDATA[this is my test4...
+]]>
+</system-out>
+</testcase>
+<testcase name="test5@sanity@reg" classname="tags.spec.js" time="0.283">
+<system-out>
+<![CDATA[this is my test5...
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="visualtesting.spec.js" timestamp="2025-09-18T09:31:32.129Z" hostname="chromium" tests="2" failures="1" skipped="0" time="7.548" errors="0">
+<testcase name="Visual comparison testing in playwright" classname="visualtesting.spec.js" time="3.128">
+<failure message="visualtesting.spec.js:5:1 Visual comparison testing in playwright" type="FAILURE">
+<![CDATA[  [chromium] › visualtesting.spec.js:5:1 › Visual comparison testing in playwright ─────────────────
+
+    Error: expect(page).toHaveScreenshot(expected) failed
+
+      80 pixels (ratio 0.01 of all image pixels) are different.
+
+      Snapshot: githubpage.png
+
+    Call log:
+      - Expect "toHaveScreenshot(githubpage.png)" with timeout 5000ms
+        - verifying given screenshot expectation
+      - taking page screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - 80 pixels (ratio 0.01 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - taking page screenshot
+        - disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - captured a stable screenshot
+      - 80 pixels (ratio 0.01 of all image pixels) are different.
+
+
+      14 |
+      15 |     // after actions 2 images comparisons
+    > 16 |     await expect(page).toHaveScreenshot('githubpage.png');
+         |                        ^
+      17 |
+      18 |     await page.waitForTimeout(3000);
+      19 |
+        at C:\Automation_Samir\PlaywrightFull_Samir\tests\visualtesting.spec.js:16:24
+
+    attachment #1: githubpage-1 (image/png) ────────────────────────────────────────────────────────
+    Expected: visualtesting.spec.js-snapshots\githubpage-chromium-win32.png
+    Received: ..\test-results\visualtesting-Visual-comparison-testing-in-playwright-chromium\githubpage-1-actual.png
+    Diff:     ..\test-results\visualtesting-Visual-comparison-testing-in-playwright-chromium\githubpage-1-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\visualtesting-Visual-comparison-testing-in-playwright-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests\visualtesting.spec.js-snapshots\githubpage-chromium-win32.png]]
+
+[[ATTACHMENT|test-results\visualtesting-Visual-comparison-testing-in-playwright-chromium\githubpage-1-actual.png]]
+
+[[ATTACHMENT|test-results\visualtesting-Visual-comparison-testing-in-playwright-chromium\githubpage-1-diff.png]]
+
+[[ATTACHMENT|test-results\visualtesting-Visual-comparison-testing-in-playwright-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Element Comparison in playwright" classname="visualtesting.spec.js" time="4.42">
+</testcase>
+</testsuite>
+</testsuites>

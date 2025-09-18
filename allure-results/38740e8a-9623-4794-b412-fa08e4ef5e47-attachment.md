@@ -1,0 +1,119 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - list [ref=e2]:
+    - listitem [ref=e3]:
+      - link "Home" [ref=e4] [cursor=pointer]:
+        - /url: /
+    - listitem [ref=e5]:
+      - link "Main Content" [ref=e6] [cursor=pointer]:
+        - /url: "#main"
+  - banner [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "DWB" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e11] [cursor=pointer]: DWB
+          - generic [ref=e12] [cursor=pointer]: 
+        - text: 
+      - generic [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /feed
+              - generic [ref=e17] [cursor=pointer]: 
+          - listitem [ref=e18]:
+            - link [ref=e19] [cursor=pointer]:
+              - /url: //twitter.com/davidwalshblog
+              - generic [ref=e20] [cursor=pointer]: 
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: //facebook.com/davidwalshblog
+              - generic [ref=e23] [cursor=pointer]: 
+          - listitem [ref=e24]:
+            - link [ref=e25] [cursor=pointer]:
+              - /url: //github.com/darkwing
+              - generic [ref=e26] [cursor=pointer]: 
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: //linkedin.com/in/davidjameswalsh
+              - generic [ref=e29] [cursor=pointer]: 
+          - listitem: 
+        - generic [ref=e32]:
+          - generic [ref=e33]: Search
+          - generic [ref=e34]: 
+          - searchbox "Search" [ref=e35]
+  - generic [ref=e37]:
+    - strong [ref=e38]: "Popular:"
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "JavaScript Promises" [ref=e41] [cursor=pointer]:
+          - /url: /promises
+      - listitem [ref=e42]:
+        - link "fetch API" [ref=e43] [cursor=pointer]:
+          - /url: /fetch
+      - listitem [ref=e44]:
+        - link "React.js" [ref=e45] [cursor=pointer]:
+          - /url: /tutorials/react
+      - listitem [ref=e46]:
+        - link "Cache API" [ref=e47] [cursor=pointer]:
+          - /url: /cache
+      - listitem [ref=e48]:
+        - link "ES6 Features" [ref=e49] [cursor=pointer]:
+          - /url: /es6-features
+      - listitem [ref=e50]:
+        - link "Node.js" [ref=e51] [cursor=pointer]:
+          - /url: /tutorials/nodejs
+      - listitem [ref=e52]:
+        - link "JavaScript" [ref=e53] [cursor=pointer]:
+          - /url: /tutorials/javascript
+      - listitem [ref=e54]:
+        - link "jQuery" [ref=e55] [cursor=pointer]:
+          - /url: /tutorials/jquery
+  - main [ref=e58]:
+    - generic [ref=e59]:
+      - 'heading "Demo: Multiple File Upload Input" [level=1] [ref=e60]'
+      - generic [ref=e61]:
+        - text: Read
+        - link "Multiple File Upload Input" [ref=e62] [cursor=pointer]:
+          - /url: https://davidwalsh.name/multiple-file-upload
+      - generic [ref=e63]:
+        - generic:
+          - link:
+            - /url: //twitter.com/share
+        - iframe [ref=e64]:
+          
+        - iframe [ref=e66]:
+          - table [ref=f2e5]:
+            - rowgroup [ref=f2e6]:
+              - row "Like 26 people like this. Sign Up to see what your friends like." [ref=f2e7]:
+                - cell "Like 26 people like this. Sign Up to see what your friends like." [ref=f2e8]:
+                  - table [ref=f2e9]:
+                    - rowgroup [ref=f2e10]:
+                      - row "Like 26 people like this. Sign Up to see what your friends like." [ref=f2e11]:
+                        - cell "Like" [ref=f2e12]:
+                          - button "Like" [ref=f2e15] [cursor=pointer]:
+                            - generic [ref=f2e20] [cursor=pointer]: Like
+                        - cell "26 people like this. Sign Up to see what your friends like." [ref=f2e21]:
+                          - generic [ref=f2e23]:
+                            - generic [ref=f2e24]: 26 people like this.
+                            - generic [ref=f2e25]:
+                              - link "Sign Up" [ref=f2e26] [cursor=pointer]:
+                                - /url: /ad_campaign/landing.php?campaign_id=137675572948107&partner_id=davidwalsh.name&placement=like_plugin&extra_1=https%3A%2F%2Fdavidwalsh.name%2F&extra_2=IN
+                              - text: to see what your friends like.
+      - paragraph [ref=e67]: Description...
+      - paragraph [ref=e68]:
+        - strong [ref=e69]: "Upload Files:"
+        - button "Choose File" [ref=e70]
+      - paragraph [ref=e71]:
+        - strong [ref=e72]: "Files You Selected:"
+      - list [ref=e73]:
+        - listitem [ref=e74]: No Files Selected
+    - paragraph [ref=e75]:
+      - text: "Back to:"
+      - link "Multiple File Upload Input" [ref=e76] [cursor=pointer]:
+        - /url: https://davidwalsh.name/multiple-file-upload
+  - iframe [ref=e77]:
+    
+```

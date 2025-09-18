@@ -15,6 +15,7 @@ require('dotenv').config();
  */
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.{js,ts}',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -24,7 +25,15 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['dot'],
+    ['list'],
+    ['junit', {  outputFile: 'test-results.xml' }],
+    ['json', {  outputFile: 'test-results.json' }],
+    ['allure-playwright', {  outputFolder: 'my-allure-results' }]
+  ],
+  
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     
@@ -33,11 +42,11 @@ export default defineConfig({
 headless:false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     video:{
-      mode:'retain-on-failure',
+      mode:'off',
       size:{width:640,height:480}
     },
-    trace: 'on-first-retry',
-    screenshot:'on-first-failure',
+    trace: 'off',
+    screenshot:'off',
   },
 
   /* Configure projects for major browsers */
